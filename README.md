@@ -11,5 +11,21 @@ pantas. Sehingga perusahaan dapat meningkatkan efisiensi waktu dalam
 menganalisa ajuan pinjaman dan menghindari kerugian.
 
 Credit risk sangat penting untuk di kelola oleh lending company untuk
-menghindari kerugian yang disebabkan karena peminjam yang tidak mampu /
-gagal mengembalikan uang/pinjaman yang diberikan.
+menghindari kerugian yang disebabkan karena peminjam yang tidak mampu / gagal mengembalikan uang/pinjaman yang diberikan. 
+
+# Goals
+Membantu perusahaan dalam menentukan peminjam yang high risk dan low risk.
+
+# Objective
+* Memahami tentang dataset
+* Memprediksi credit risk dari peminjam
+
+# Tahapan yang dilakukan
+* `Expolatory Data Analysis`, melakukan descriptive statistic, Univariate analysis, dan multivariate analysis
+* `Preprocessing`, melakukan handle missing value, outlier, feature engineering, feature selection, feature encoding, split data, feature scaling, dan handle imbalance data
+* `Modelling` mencoba beberapa algoritma untuk melihat performa terbaik.
+* `Evaluasi Hasil` menggunakan confussion matrix ROC sebagai acuan menentukan performa terbaik.
+
+# Kesimpulan
+* Model Machine Learning XGB Classifier memiliki performa ROC yang tinggi di banding model lain yang di uji yaitu 99.63% data training dan 96.32% testing. Namun Setelah melakukan pengecekan dengan cross validation, terjadi overfitting dimana model terlalu beradaptasi dengan data training sehingga performa di data testing turun menjadi 88.41%.
+* Jika di tinjau dengan mempertimbangan overfitting atau tidak, model machine learning longistic Regression dan Ada boost memiliki performa ROC terbaik dan cenderung overfitting yang rendah.
